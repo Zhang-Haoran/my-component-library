@@ -7,5 +7,4 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 
-/.idea
 /back-end/Auth/node_modules
