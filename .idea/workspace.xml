@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2edb064-866b-4663-93de-13a05403e71f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/my-component-library.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/empty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/Auth/src/tests/auth.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/Auth/src/tests/auth.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +56,8 @@
       <workItem from="1624429294788" duration="1981000" />
       <workItem from="1624491173632" duration="662000" />
       <workItem from="1624492276469" duration="4100000" />
+      <workItem from="1624498603579" duration="2343000" />
+      <workItem from="1624518451522" duration="1438000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <created>1624407837377</created>
