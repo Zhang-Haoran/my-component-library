@@ -3,10 +3,10 @@ const {generateToken} = require("../utils/auth");
 //sign up user
 async function addUser(req,res){
     //check if username or password is empty
-    if (req.body.username === undefined ||req.body.password === undefined ){
+    if (req.body.username || req.body.password){
         return res.status(400).send({error:"username or password is not defined"})
     }
-    const {username,password} = req.body;
+    const {username, password} = req.body;
 
     //check if user is already registered
     const existingUser = await User.findOne({username});

@@ -4,7 +4,7 @@ const User = require("../model/user");
 //user login
 async function login(req,res){
     //check if username or password is empty
-    if (req.body.username === undefined ||req.body.password === undefined ){
+    if (req.body.username || req.body.password){
         return res.status(400).send({error:"username or password is not defined"})
     }
     const {username, password} = req.body;
@@ -21,6 +21,6 @@ async function login(req,res){
         return res.status(401).json({error:"invalid password"});
     }
 
-    return res.status(200).json({token:generateToken({id:user._id}),username})
+    return res.status(200).json({token: generateToken({id:user._id}), username})
 }
 module.exports = {login}

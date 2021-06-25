@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2edb064-866b-4663-93de-13a05403e71f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/back-end/Auth/src/tests/user.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/Auth/src/controller/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/Auth/src/controller/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/Auth/src/controller/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/Auth/src/controller/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back-end/Auth/src/tests/auth.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/Auth/src/tests/auth.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -153,7 +154,10 @@
       <workItem from="1624492276469" duration="4100000" />
       <workItem from="1624498603579" duration="2343000" />
       <workItem from="1624518451522" duration="1464000" />
-      <workItem from="1624579418918" duration="4239000" />
+      <workItem from="1624579418918" duration="5344000" />
+      <workItem from="1624585136663" duration="208000" />
+      <workItem from="1624585442532" duration="49000" />
+      <workItem from="1624586107431" duration="70000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <created>1624407837377</created>
@@ -204,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624582200984</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="user testing updated">
+      <created>1624583724154</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1624583724154</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +230,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="add auth testing" />
     <MESSAGE value="auth testing updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="auth testing updated" />
+    <MESSAGE value="user testing updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="user testing updated" />
   </component>
 </project>
