@@ -1,24 +1,21 @@
 const supertest = require("supertest");
 const app = require("../app");
-const User = require("../model/user")
+const {setup} = require("./setup");
 
 const request = supertest(app);
 
 describe("/auth", () => {
   beforeAll(async ()=>{
-    await User.deleteMany({});
-    const user = new User({ username: "existUser", password: "123" });
-    await user.hashPassword();
-    await user.save();
+    await setup();
   })
   afterAll(async () => {
-    await User.deleteMany({});
+    await setup();
   });
   describe("POST", () => {
     it("should return token and username if request contain valid username and password", async function () {
       const res = await request
         .post("/api/v1/auth")
-        .send({ username: "existUser", password: "123" });
+        .send({ username: "admin", password: "123" });
       expect(res.statusCode).toBe(200);
       expect(Object.keys(res.body)).toContain("token");
       expect(Object.keys(res.body)).toContain("username");
@@ -39,7 +36,7 @@ describe("/auth", () => {
     it("should return error message if password does not match username in database", async function () {
       const res = await request
         .post("/api/v1/auth")
-        .send({ username: "existUser", password: "111" });
+        .send({ username: "admin", password: "111" });
       expect(res.statusCode).toBe(401);
     });
   });

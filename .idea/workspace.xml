@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2edb064-866b-4663-93de-13a05403e71f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/back-end/Auth/src/tests/setup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/Auth/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/Auth/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/Auth/src/controller/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/Auth/src/controller/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/Auth/src/controller/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/Auth/src/controller/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back-end/Auth/src/tests/auth.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/Auth/src/tests/auth.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back-end/Auth/src/tests/user.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/Auth/src/tests/user.test.js" afterDir="false" />
     </list>
@@ -159,7 +157,7 @@
       <workItem from="1624579418918" duration="5344000" />
       <workItem from="1624585136663" duration="208000" />
       <workItem from="1624585442532" duration="49000" />
-      <workItem from="1624586107431" duration="4779000" />
+      <workItem from="1624586107431" duration="5524000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <created>1624407837377</created>
@@ -224,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624586257529</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add token to test">
+      <created>1624594703646</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1624594703646</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,6 +246,7 @@
     <MESSAGE value="auth testing updated" />
     <MESSAGE value="user testing updated" />
     <MESSAGE value="bad smell" />
-    <option name="LAST_COMMIT_MESSAGE" value="bad smell" />
+    <MESSAGE value="add token to test" />
+    <option name="LAST_COMMIT_MESSAGE" value="add token to test" />
   </component>
 </project>

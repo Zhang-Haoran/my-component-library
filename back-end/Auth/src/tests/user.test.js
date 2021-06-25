@@ -2,23 +2,20 @@ const supertest = require("supertest");
 const UserTest = require("../model/user");
 const app = require("../app");
 const {generateToken} = require("../utils/auth");
-const User = require("../model/user")
+const {setup} = require("./setup");
 
 const request = supertest(app);
-const TOKEN = generateToken({ id: 'test_id' });
+const TOKEN = generateToken({ id: 'test' });
 
 describe("/user",()=>{
     beforeAll(async () => {
-        await User.deleteMany({});
-        const user = new User({ username: "existUser", password: "123" });
-        await user.hashPassword();
-        await user.save();
+        await setup();
     });
 
     afterAll(async () => {
-        await User.deleteMany({});
+        await setup();
     });
-    
+
     describe("POST",() => {
         it("should return token and username if user sign up with new record ", async function () {
             const res = await request
@@ -35,7 +32,7 @@ describe("/user",()=>{
         });
 
         it('should return error message if username already exist in database', async function () {
-            const res = await request.post("/api/v1/user").send({username:"existUser",password:"123"}).set('Authorization', `Bearer ${TOKEN}`);
+            const res = await request.post("/api/v1/user").send({username:"admin",password:"123"}).set('Authorization', `Bearer ${TOKEN}`);
             expect(res.statusCode).toBe(409);
         });
     })
