@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2edb064-866b-4663-93de-13a05403e71f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/front-end/empty" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/Auth/src/controller/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/Auth/src/controller/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/Auth/src/controller/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/Auth/src/controller/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back-end/Auth/src/tests/auth.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/Auth/src/tests/auth.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +21,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1uKIDteNfe9ALKN6TxgOyOUXdn5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -57,7 +66,8 @@
       <workItem from="1624491173632" duration="662000" />
       <workItem from="1624492276469" duration="4100000" />
       <workItem from="1624498603579" duration="2343000" />
-      <workItem from="1624518451522" duration="1438000" />
+      <workItem from="1624518451522" duration="1464000" />
+      <workItem from="1624579418918" duration="1383000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <created>1624407837377</created>
@@ -87,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624496679404</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="test">
+      <created>1624519921282</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1624519921282</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,6 +116,7 @@
     <MESSAGE value="user authentication&#10;generate token and verify token&#10;login api&#10;but no verify token api" />
     <MESSAGE value="add unit testing for auth" />
     <MESSAGE value="add password hash" />
-    <option name="LAST_COMMIT_MESSAGE" value="add password hash" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
 </project>
