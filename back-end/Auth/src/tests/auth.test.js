@@ -5,7 +5,7 @@ const request = supertest(app);
 
 describe("/auth",()=>{
   describe("POST",() => {
-    it("should return token if request contain valid username and password", async function () {
+    it("should return token and username if request contain valid username and password", async function () {
       const res = await request
           .post("/api/v1/auth")
           .send({ username: "Operation", password: "123" });

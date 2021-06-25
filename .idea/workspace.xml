@@ -44,6 +44,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/back-end/Auth/node_modules/jest" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -51,6 +52,92 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Ai English\WebstormProjects\my-component-library\back-end\Auth\src" />
     </key>
+  </component>
+  <component name="RunManager" selected="Jest./user.POST.should return token and username if user sign up with new record ">
+    <configuration name="/auth.POST.should return error message if username does not find in database" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/back-end/Auth/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/back-end/Auth" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/back-end/Auth/src/tests/auth.test.js" />
+      <test-names>
+        <test-name value="/auth" />
+        <test-name value="POST" />
+        <test-name value="should return error message if username does not find in database" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="/auth.POST.should return token and username if request contain valid username and password" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/back-end/Auth/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/back-end/Auth" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/back-end/Auth/src/tests/auth.test.js" />
+      <test-names>
+        <test-name value="/auth" />
+        <test-name value="POST" />
+        <test-name value="should return token and username if request contain valid username and password" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="/user.POST.should return error message if request body does not contain username or password" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/back-end/Auth/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/back-end/Auth" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/back-end/Auth/src/tests/user.test.js" />
+      <test-names>
+        <test-name value="/user" />
+        <test-name value="POST" />
+        <test-name value="should return error message if request body does not contain username or password" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="/user.POST.should return error message if username already exist in database" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/back-end/Auth/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/back-end/Auth" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/back-end/Auth/src/tests/user.test.js" />
+      <test-names>
+        <test-name value="/user" />
+        <test-name value="POST" />
+        <test-name value="should return error message if username already exist in database" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="/user.POST.should return token and username if user sign up with new record " type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/back-end/Auth/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/back-end/Auth" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/back-end/Auth/src/tests/user.test.js" />
+      <test-names>
+        <test-name value="/user" />
+        <test-name value="POST" />
+        <test-name value="should return token and username if user sign up with new record " />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest./user.POST.should return token and username if user sign up with new record " />
+        <item itemvalue="Jest./user.POST.should return error message if request body does not contain username or password" />
+        <item itemvalue="Jest./user.POST.should return error message if username already exist in database" />
+        <item itemvalue="Jest./auth.POST.should return token and username if request contain valid username and password" />
+        <item itemvalue="Jest./auth.POST.should return error message if username does not find in database" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -66,7 +153,7 @@
       <workItem from="1624492276469" duration="4100000" />
       <workItem from="1624498603579" duration="2343000" />
       <workItem from="1624518451522" duration="1464000" />
-      <workItem from="1624579418918" duration="2686000" />
+      <workItem from="1624579418918" duration="4239000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <created>1624407837377</created>
@@ -110,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624580895679</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="auth testing updated">
+      <created>1624582200984</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1624582200984</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +218,7 @@
     <MESSAGE value="add password hash" />
     <MESSAGE value="test" />
     <MESSAGE value="add auth testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="add auth testing" />
+    <MESSAGE value="auth testing updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="auth testing updated" />
   </component>
 </project>
