@@ -4,7 +4,7 @@ const User = require("../model/user");
 //user login
 async function login(req,res){
     //check if username or password is empty
-    if (req.body.username || req.body.password){
+    if (req.body.username === undefined|| req.body.password === undefined){
         return res.status(400).send({error:"username or password is not defined"})
     }
     const {username, password} = req.body;

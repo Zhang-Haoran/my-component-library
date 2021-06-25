@@ -1,27 +1,41 @@
 const supertest = require("supertest");
-const User = require("../model/user");
+const UserTest = require("../model/user");
 const app = require("../app");
+const {generateToken} = require("../utils/auth");
+const User = require("../model/user")
 
 const request = supertest(app);
+const TOKEN = generateToken({ id: 'test_id' });
 
 describe("/user",()=>{
+    beforeAll(async () => {
+        await User.deleteMany({});
+        const user = new User({ username: "existUser", password: "123" });
+        await user.hashPassword();
+        await user.save();
+    });
+
+    afterAll(async () => {
+        await User.deleteMany({});
+    });
+    
     describe("POST",() => {
         it("should return token and username if user sign up with new record ", async function () {
             const res = await request
                 .post("/api/v1/user")
-                .send({ username: `Operation${Math.random()}`, password: "123" });
+                .send({ username: `newUser`, password: "123" }).set('Authorization', `Bearer ${TOKEN}`);
             expect(res.statusCode).toBe(201);
             expect(Object.keys(res.body)).toContain("token");
             expect(Object.keys(res.body)).toContain("username");
         });
 
         it("should return error message if request body does not contain username or password", async function () {
-            const res = await request.post("/api/v1/user").send({});
+            const res = await request.post("/api/v1/user").send({}).set('Authorization', `Bearer ${TOKEN}`);
             expect(res.statusCode).toBe(400);
         });
 
         it('should return error message if username already exist in database', async function () {
-            const res = await request.post("/api/v1/user").send({username:"Operation",password:"123"});
+            const res = await request.post("/api/v1/user").send({username:"existUser",password:"123"}).set('Authorization', `Bearer ${TOKEN}`);
             expect(res.statusCode).toBe(409);
         });
     })
