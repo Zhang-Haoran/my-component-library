@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2edb064-866b-4663-93de-13a05403e71f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/codeTest/Array.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeTest/Stack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeTest/Queue.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codeTest/this.js" beforeDir="false" afterPath="$PROJECT_DIR$/codeTest/This.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,22 +56,7 @@
       <recent name="C:\Users\Ai English\WebstormProjects\my-component-library\back-end\Auth\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.Stack.js">
-    <configuration name="/user.POST.should return error message if request body does not contain username or password" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/back-end/Auth/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$/back-end/Auth" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/back-end/Auth/src/tests/user.test.js" />
-      <test-names>
-        <test-name value="/user" />
-        <test-name value="POST" />
-        <test-name value="should return error message if request body does not contain username or password" />
-      </test-names>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Node.js.Queue.js">
     <configuration name="/user.POST.should return token and username if user sign up with new record " type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -92,6 +75,9 @@
     <configuration name="Array.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/codeTest/Array.js" working-dir="$PROJECT_DIR$/codeTest">
       <method v="2" />
     </configuration>
+    <configuration name="Queue.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/codeTest/Queue.js" working-dir="$PROJECT_DIR$/codeTest">
+      <method v="2" />
+    </configuration>
     <configuration name="Stack.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/codeTest/Stack.js" working-dir="$PROJECT_DIR$/codeTest">
       <method v="2" />
     </configuration>
@@ -100,11 +86,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.Queue.js" />
         <item itemvalue="Node.js.Stack.js" />
         <item itemvalue="Node.js.Array.js" />
         <item itemvalue="Node.js.This.js" />
         <item itemvalue="Jest./user.POST.should return token and username if user sign up with new record " />
-        <item itemvalue="Jest./user.POST.should return error message if request body does not contain username or password" />
       </list>
     </recent_temporary>
   </component>
@@ -131,7 +117,7 @@
       <workItem from="1625191729139" duration="21000" />
       <workItem from="1625442552304" duration="346000" />
       <workItem from="1625442905753" duration="26000" />
-      <workItem from="1625443129508" duration="11173000" />
+      <workItem from="1625443129508" duration="13914000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <created>1624407837377</created>
@@ -238,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625449956510</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="stack and array">
+      <created>1625458840472</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1625458840472</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +254,7 @@
     <MESSAGE value="components init" />
     <MESSAGE value="add underline color" />
     <MESSAGE value="add normalize.css" />
-    <option name="LAST_COMMIT_MESSAGE" value="add normalize.css" />
+    <MESSAGE value="stack and array" />
+    <option name="LAST_COMMIT_MESSAGE" value="stack and array" />
   </component>
 </project>
