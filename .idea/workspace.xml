@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2edb064-866b-4663-93de-13a05403e71f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/codeTest/Queue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeTest/LinkedList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,23 +56,11 @@
       <recent name="C:\Users\Ai English\WebstormProjects\my-component-library\back-end\Auth\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.Queue.js">
-    <configuration name="/user.POST.should return token and username if user sign up with new record " type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/back-end/Auth/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$/back-end/Auth" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/back-end/Auth/src/tests/user.test.js" />
-      <test-names>
-        <test-name value="/user" />
-        <test-name value="POST" />
-        <test-name value="should return token and username if user sign up with new record " />
-      </test-names>
+  <component name="RunManager" selected="Node.js.LinkedList.js">
+    <configuration name="Array.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/codeTest/Array.js" working-dir="$PROJECT_DIR$/codeTest">
       <method v="2" />
     </configuration>
-    <configuration name="Array.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/codeTest/Array.js" working-dir="$PROJECT_DIR$/codeTest">
+    <configuration name="LinkedList.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/codeTest/LinkedList.js" working-dir="$PROJECT_DIR$/codeTest">
       <method v="2" />
     </configuration>
     <configuration name="Queue.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/codeTest/Queue.js" working-dir="$PROJECT_DIR$/codeTest">
@@ -86,11 +74,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.LinkedList.js" />
         <item itemvalue="Node.js.Queue.js" />
         <item itemvalue="Node.js.Stack.js" />
         <item itemvalue="Node.js.Array.js" />
         <item itemvalue="Node.js.This.js" />
-        <item itemvalue="Jest./user.POST.should return token and username if user sign up with new record " />
       </list>
     </recent_temporary>
   </component>
@@ -117,7 +105,8 @@
       <workItem from="1625191729139" duration="21000" />
       <workItem from="1625442552304" duration="346000" />
       <workItem from="1625442905753" duration="26000" />
-      <workItem from="1625443129508" duration="13914000" />
+      <workItem from="1625443129508" duration="15455000" />
+      <workItem from="1625463963779" duration="1399000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <created>1624407837377</created>
@@ -231,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625458840472</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Queue">
+      <created>1625461651979</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1625461651979</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,6 +251,7 @@
     <MESSAGE value="add underline color" />
     <MESSAGE value="add normalize.css" />
     <MESSAGE value="stack and array" />
-    <option name="LAST_COMMIT_MESSAGE" value="stack and array" />
+    <MESSAGE value="Queue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Queue" />
   </component>
 </project>
