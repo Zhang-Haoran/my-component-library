@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2edb064-866b-4663-93de-13a05403e71f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/normalize.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Banner/assets/about us banner.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Banner/assets/banner.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Banner/assets/about us banner@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Banner/assets/banner@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Banner/assets/about us banner@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Banner/assets/banner@3x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Banner/components/Banner.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Banner/components/Banner.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Banner/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Banner/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Banner/styles/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Banner/styles/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/BestChoice/assets/best_choice_for_travllers_pic.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/BestChoice/assets/choice.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/BestChoice/assets/best_choice_for_travllers_pic@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/BestChoice/assets/choice@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/BestChoice/assets/best_choice_for_travllers_pic@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/BestChoice/assets/choice@3x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/BestChoice/components/BestChoice.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/BestChoice/components/BestChoice.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/BestChoice/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/BestChoice/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/BestChoice/styles/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/BestChoice/styles/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -57,6 +46,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/back-end/Auth/node_modules/jest" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -165,7 +155,7 @@
       <workItem from="1625191729139" duration="21000" />
       <workItem from="1625442552304" duration="346000" />
       <workItem from="1625442905753" duration="26000" />
-      <workItem from="1625443129508" duration="5861000" />
+      <workItem from="1625443129508" duration="6495000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <created>1624407837377</created>
@@ -258,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625445188423</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add underline color">
+      <created>1625449534080</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1625449534080</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,6 +276,7 @@
     <MESSAGE value="this explanation" />
     <MESSAGE value="create react app in frontend" />
     <MESSAGE value="components init" />
-    <option name="LAST_COMMIT_MESSAGE" value="components init" />
+    <MESSAGE value="add underline color" />
+    <option name="LAST_COMMIT_MESSAGE" value="add underline color" />
   </component>
 </project>

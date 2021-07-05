@@ -60,6 +60,5 @@ export const Right = styled.img`
 export const Underline = styled.span`
   width: 180px;
   height: 4px;
-  text-decoration-color: #3ab2b3;
-  text-decoration: underline;
+  text-decoration: underline #3ab2b3;
 `;
