@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2edb064-866b-4663-93de-13a05403e71f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/codeTest/LinkedList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeTest/LinkedList.js" beforeDir="false" afterPath="$PROJECT_DIR$/codeTest/LinkedList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +106,8 @@
       <workItem from="1625442552304" duration="346000" />
       <workItem from="1625442905753" duration="26000" />
       <workItem from="1625443129508" duration="15455000" />
-      <workItem from="1625463963779" duration="1399000" />
+      <workItem from="1625463963779" duration="1559000" />
+      <workItem from="1625465619316" duration="34000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <created>1624407837377</created>
@@ -227,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625461651979</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="LinkedList">
+      <created>1625465506166</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1625465506166</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,6 +260,7 @@
     <MESSAGE value="add normalize.css" />
     <MESSAGE value="stack and array" />
     <MESSAGE value="Queue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Queue" />
+    <MESSAGE value="LinkedList" />
+    <option name="LAST_COMMIT_MESSAGE" value="LinkedList" />
   </component>
 </project>
