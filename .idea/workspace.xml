@@ -2,8 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2edb064-866b-4663-93de-13a05403e71f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js-basic/this.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/setupTests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/Auth/.env" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Auth/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/Auth/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Auth/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/Auth/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Auth/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/Auth/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Auth/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/Auth/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Auth/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/Auth/src/controller/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Auth/src/controller/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/Auth/src/controller/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Auth/src/controller/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/Auth/src/middleware/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Auth/src/middleware/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/Auth/src/model/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Auth/src/model/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/Auth/src/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Auth/src/routes/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/Auth/src/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Auth/src/routes/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/Auth/src/tests/auth.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Auth/src/tests/auth.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/Auth/src/tests/setup.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Auth/src/tests/setup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/Auth/src/tests/user.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Auth/src/tests/user.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/Auth/src/utils/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Auth/src/utils/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/Auth/src/utils/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Auth/src/utils/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/empty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-basic/this.js" beforeDir="false" afterPath="$PROJECT_DIR$/codeTest/this.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +149,7 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="this.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js-basic/this.js" working-dir="$PROJECT_DIR$/js-basic">
+    <configuration name="this.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/codeTest/this.js" working-dir="$PROJECT_DIR$/codeTest">
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -145,7 +181,11 @@
       <workItem from="1624585442532" duration="49000" />
       <workItem from="1624586107431" duration="5524000" />
       <workItem from="1625182180166" duration="386000" />
-      <workItem from="1625184079207" duration="7102000" />
+      <workItem from="1625184079207" duration="7339000" />
+      <workItem from="1625191729139" duration="21000" />
+      <workItem from="1625442552304" duration="346000" />
+      <workItem from="1625442905753" duration="26000" />
+      <workItem from="1625443129508" duration="305000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <created>1624407837377</created>
@@ -217,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624594703646</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="this explanation">
+      <created>1625191436438</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1625191436438</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +282,7 @@
     <MESSAGE value="user testing updated" />
     <MESSAGE value="bad smell" />
     <MESSAGE value="add token to test" />
-    <option name="LAST_COMMIT_MESSAGE" value="add token to test" />
+    <MESSAGE value="this explanation" />
+    <option name="LAST_COMMIT_MESSAGE" value="this explanation" />
   </component>
 </project>
