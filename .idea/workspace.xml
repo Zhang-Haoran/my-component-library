@@ -2,15 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2edb064-866b-4663-93de-13a05403e71f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Banner/components/Banner.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Banner/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Banner/styles/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/BestChoice/components/BestChoice.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/BestChoice/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/BestChoice/styles/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Banner/assets/about us banner.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Banner/assets/banner.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Banner/assets/about us banner@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Banner/assets/banner@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Banner/assets/about us banner@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Banner/assets/banner@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Banner/components/Banner.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Banner/components/Banner.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Banner/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Banner/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Banner/styles/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Banner/styles/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/BestChoice/assets/best_choice_for_travllers_pic.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/BestChoice/assets/choice.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/BestChoice/assets/best_choice_for_travllers_pic@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/BestChoice/assets/choice@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/BestChoice/assets/best_choice_for_travllers_pic@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/BestChoice/assets/choice@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/BestChoice/components/BestChoice.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/BestChoice/components/BestChoice.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/BestChoice/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/BestChoice/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/BestChoice/styles/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/BestChoice/styles/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +63,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ai English\WebstormProjects\my-component-library\frontend\src\components\BestChoice\assets" />
+      <recent name="C:\Users\Ai English\WebstormProjects\my-component-library\frontend\src\components\Banner\assets" />
       <recent name="C:\Users\Ai English\WebstormProjects\my-component-library\back-end\Auth\src" />
     </key>
   </component>
@@ -156,7 +165,7 @@
       <workItem from="1625191729139" duration="21000" />
       <workItem from="1625442552304" duration="346000" />
       <workItem from="1625442905753" duration="26000" />
-      <workItem from="1625443129508" duration="1905000" />
+      <workItem from="1625443129508" duration="5861000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <created>1624407837377</created>
@@ -242,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625443499508</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="components init">
+      <created>1625445188423</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1625445188423</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,6 +278,7 @@
     <MESSAGE value="add token to test" />
     <MESSAGE value="this explanation" />
     <MESSAGE value="create react app in frontend" />
-    <option name="LAST_COMMIT_MESSAGE" value="create react app in frontend" />
+    <MESSAGE value="components init" />
+    <option name="LAST_COMMIT_MESSAGE" value="components init" />
   </component>
 </project>
