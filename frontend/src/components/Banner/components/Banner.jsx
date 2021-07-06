@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Container, Title} from "../styles";
-import banner from "../assets/banner.png";
+import banner from "../assets/banner@2x.png";
 
 class Banner extends Component{
     render() {

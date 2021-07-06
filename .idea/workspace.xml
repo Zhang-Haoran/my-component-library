@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2edb064-866b-4663-93de-13a05403e71f" name="Default Changelist" comment="">
+    <list default="true" id="c2edb064-866b-4663-93de-13a05403e71f" name="Default Changelist" comment="LinkedList">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codeTest/LinkedList.js" beforeDir="false" afterPath="$PROJECT_DIR$/codeTest/LinkedList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Banner/components/Banner.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Banner/components/Banner.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Banner/styles/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Banner/styles/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/BestChoice/styles/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/BestChoice/styles/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +109,10 @@
       <workItem from="1625442905753" duration="26000" />
       <workItem from="1625443129508" duration="15455000" />
       <workItem from="1625463963779" duration="1559000" />
-      <workItem from="1625465619316" duration="34000" />
+      <workItem from="1625465619316" duration="330000" />
+      <workItem from="1625470921281" duration="13000" />
+      <workItem from="1625527410929" duration="114000" />
+      <workItem from="1625532600578" duration="3662000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <created>1624407837377</created>
@@ -235,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625465506166</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="LinkedList">
+      <created>1625465732200</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1625465732200</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

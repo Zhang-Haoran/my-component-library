@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-  background: url(${({img})=>img}) no-repeat;
+  background: url(${({img})=>img}) no-repeat center;
+  background-size: cover;
   height: 370px;
-  object-fit: contain;
   display: flex;
 `;
 export const Title = styled.h1`
