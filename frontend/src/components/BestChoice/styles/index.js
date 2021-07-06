@@ -6,7 +6,7 @@ export const Container = styled.section`
 `;
 export const Title = styled.h2`
   margin: 159px 86px 25px 147px;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 36px;
   font-weight: bold;
   line-height: normal;
@@ -16,7 +16,7 @@ export const Title = styled.h2`
 export const Subtitle = styled.h3`
   width: 477px;
   margin: 25px 102px 25px 147px;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 24px;
   font-weight: 500;
   line-height: 1.5;
@@ -26,7 +26,7 @@ export const Subtitle = styled.h3`
 export const Paragraph = styled.p`
   width: 477px;
   margin: 25px 105px 211px 146px;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 2.57;
