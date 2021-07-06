@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2edb064-866b-4663-93de-13a05403e71f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/codeTest/Tree.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/BestChoice/styles/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/BestChoice/styles/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +56,7 @@
       <recent name="C:\Users\Ai English\WebstormProjects\my-component-library\back-end\Auth\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.LinkedList.js">
+  <component name="RunManager" selected="Node.js.Tree.js">
     <configuration name="Array.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/codeTest/Array.js" working-dir="$PROJECT_DIR$/codeTest">
       <method v="2" />
     </configuration>
@@ -69,16 +69,16 @@
     <configuration name="Stack.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/codeTest/Stack.js" working-dir="$PROJECT_DIR$/codeTest">
       <method v="2" />
     </configuration>
-    <configuration name="This.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/codeTest/This.js" working-dir="$PROJECT_DIR$/codeTest">
+    <configuration name="Tree.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/codeTest/Tree.js" working-dir="$PROJECT_DIR$/codeTest">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.Tree.js" />
         <item itemvalue="Node.js.LinkedList.js" />
         <item itemvalue="Node.js.Queue.js" />
         <item itemvalue="Node.js.Stack.js" />
         <item itemvalue="Node.js.Array.js" />
-        <item itemvalue="Node.js.This.js" />
       </list>
     </recent_temporary>
   </component>
@@ -110,7 +110,7 @@
       <workItem from="1625465619316" duration="330000" />
       <workItem from="1625470921281" duration="13000" />
       <workItem from="1625527410929" duration="114000" />
-      <workItem from="1625532600578" duration="4961000" />
+      <workItem from="1625532600578" duration="6722000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <created>1624407837377</created>
@@ -259,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625536540524</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="adjust css for frontend">
+      <created>1625541959922</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1625541959922</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
