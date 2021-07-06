@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2edb064-866b-4663-93de-13a05403e71f" name="Default Changelist" comment="LinkedList">
+    <list default="true" id="c2edb064-866b-4663-93de-13a05403e71f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Banner/components/Banner.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Banner/components/Banner.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Banner/styles/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Banner/styles/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/BestChoice/styles/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/BestChoice/styles/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +111,7 @@
       <workItem from="1625465619316" duration="330000" />
       <workItem from="1625470921281" duration="13000" />
       <workItem from="1625527410929" duration="114000" />
-      <workItem from="1625532600578" duration="3662000" />
+      <workItem from="1625532600578" duration="3886000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <created>1624407837377</created>
@@ -247,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625465732200</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="adjust css for frontend">
+      <created>1625536300895</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1625536300895</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,6 +279,7 @@
     <MESSAGE value="stack and array" />
     <MESSAGE value="Queue" />
     <MESSAGE value="LinkedList" />
-    <option name="LAST_COMMIT_MESSAGE" value="LinkedList" />
+    <MESSAGE value="adjust css for frontend" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjust css for frontend" />
   </component>
 </project>
