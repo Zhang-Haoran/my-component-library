@@ -9,10 +9,17 @@ import * as type from "./redux/type"
 
 let bookNumber = 1
 let published = false
+let currentState = []
 //订阅用于监控state是否已经改变，如果已经state改变将触发，下面的操作
 store.subscribe(() => {
   console.log(store.getState()) //将state打印出来
   //没法直接console state，只能用getstate访问reducer
+})
+
+store.subscribe(() => {
+  if (currentState.length !== store.getState().length) {
+    currentState = store.getState() //获取reducer里state的副本
+  }
 })
 
 //addbook 监听器
