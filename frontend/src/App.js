@@ -1,13 +1,13 @@
-import Banner from "./components/Banner";
-import BestChoice from "./components/BestChoice";
+import Banner from "./components/Banner"
+import BestChoice from "./components/BestChoice"
 
 function App() {
   return (
     <>
-      <Banner/>
-      <BestChoice/>
+      <Banner />
+      <BestChoice />
     </>
-  );
+  )
 }
 
-export default App;
+export default App
