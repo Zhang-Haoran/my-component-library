@@ -1,4 +1,3 @@
-
 # Phone interview (30mins most)
 ### **what is your current situation?**
 
