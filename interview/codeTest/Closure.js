@@ -1,5 +1,5 @@
 // 没有运行前的静态场景下，function在那里定义的，值在哪里取。如果在当前定义域取不到，就去当前定义域上级的值
-//取值的时候是看function在哪声明，而不是在哪调用
+// 取值的时候是看function在哪声明，而不是在哪调用
 const number = 1;
 function foo() {
   console.log(number);
@@ -32,5 +32,5 @@ function createCounter() {
 //   立即执行函数
 // function() {}() 用圆括号抱起来，不然IDE不知道什么意思
 (function(){
-    
+
 }())
