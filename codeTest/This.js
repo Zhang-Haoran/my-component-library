@@ -2,7 +2,7 @@
 // function 谁是caller，this就是谁。雇佣兵
 // 箭头函数 我在哪定义，this就指向定义它的那个 作用域。 不可以被绑定。因为它相当于定义完一个function，直接被绑定。
 // 单纯Object{}不能形成块级作用域
-// 箭头函数找作用域，包裹arrow function的上级作用域是谁，就是谁。套娃
+// 箭头函数找作用域，包裹arrow function的上级作用域是谁(包裹它的作用域)，就是谁。套娃
 "use strict"
 
 const haoran = {
