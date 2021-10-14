@@ -227,3 +227,128 @@ foo()(); //1
 ```
 
 应用到了应用2所形成的闭包，内部变量不会对外部进行干扰
+
+## 知识点6：This
+
+根据当前的上下文context，来取相应的变量
+
+this的值是动态的，只有在调用（实习执行）时才知道this值是什么
+
+### this in normal function
+
+```
+function foo(){
+	console.log(this);
+}
+foo(); // window
+```
+
+默认情况下，this在function里的指向，是调用function的对象，即window是他的上下文
+
+即window.foo();
+
+## this in normal function with call, apply, bind
+
+call和apply类似，想要调用函数并且指定this指向
+
+```
+// a1, a2为参数格式
+foo.call({number:1}) // this就是 {number:1}对象
+// [a1, a2]为参数格式
+foo.apply({number；2}) // this 就是 {number:2} 对象
+// bind return new function
+const bar = foo.bind({number:3});
+bar(); // this就是{number: 3}对象
+
+```
+
+call和apply的区别是
+
+call 第一个参数是this指向，第二个参数，第三个参数，乃至n个参数，是foo 接受的参数。参数以逗号隔开
+
+apply从第二个参数开始，所有foo function的参数，以array形式放在一起
+
+bind会返回新function，把新的function的this指向 我传入的对象
+
+## this in an object and callback function
+
+```
+const calendar = {
+  currentDay: 6,
+  nextDay() {
+    this.currentDay++;
+    console.log(this.currentDay);
+  },
+};
+calendar.nextDay();
+```
+
+```
+const calendar = {
+  currentDay: 6,
+  nextDay() {
+    setTimeout(function () {
+      this.currentDay++;
+      console.log(this.currentDay); // undefined
+    });
+  },
+};
+calendar.nextDay(); //NaN 
+```
+
+NaN的原因是因为想要给this.currentDay加一，但是this.currentDay 是undefined
+
+在这里this指向了window，是因为setTimeout是由window调用的
+
+```
+const calendar = {
+  currentDay: 6,
+  nextDay() {
+    setTimeout(function () {
+      this.currentDay++;
+      console.log(this.currentDay);
+    }).bind(this)
+  },
+};
+calendar.nextDay(); // 7
+```
+
+可以用bind来改正这个问题，手动把function（）{this.currentDay++; console.log(this.currentDay)}的this，手动指定到当前上下文的this。即调用nextday()的calendar
+
+```
+const calendar = {
+  currentDay: 6,
+  nextDay() {
+    setTimeout(() => {
+      this.currentDay++;
+      console.log(this.currentDay);
+    });
+  },
+};
+calendar.nextDay(); //7
+```
+
+
+在arrow function里完全没有this指向，它在写下的这一刻，它的this指向完全依赖于 包裹它的上级作用域
+
+他的上级作用域是调用nextDay()的calendar
+
+```
+const calendar = {
+  currentDay: 6,
+  normal: function () {
+    console.log(1, this); // calendar
+    setTimeout(function () {
+      console.log(2, this); // window
+    });
+  },
+  arrow: function () {
+    console.log(3, this); // calendar
+    setTimeout(() => {
+      console.log(4, this); // calendar
+    });
+  },
+};
+calendar.normal();
+calendar.arrow();
+```
