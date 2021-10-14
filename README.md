@@ -97,3 +97,133 @@ console.log(fruit); // {name:'apple', color:'green'}
 之所以能改变fruit object的值，是因为改变的是引用地址上的值，而它的引用地址没有修改
 
 fruit ->ref -> {name:'apple', color:'red'}
+
+## 知识点2：spread operator 延展操作符
+
+```
+const array = [1,2]
+const newArray = [...array, 3, 4]
+console.log(newArray) // [1,2,3,4]
+```
+
+如果不用延展操作符，就必须这样写
+
+```
+const newArray = [array[0], array[1], 3, 4]
+
+```
+
+## 知识点3：函数声明和函数表达式
+
+function expression 函数表达式
+
+```
+const add = function(x,y){
+	return x+y
+}
+
+```
+
+function declaration 函数声明
+
+```
+function add(x,y){
+	return x+y
+}
+```
+
+区别在于 体现在变量提升。
+
+函数表达式不能在对他赋值之前，使用它。
+
+函数声明是可以直接使用。
+
+## 知识点4：Callback回调函数
+
+给一个函数 传了另一个函数作为参数
+
+```
+function normalFunction(param){
+	console.log(param);
+}
+function sum(x, y, callback){
+	const total= x+ y;
+	callback(sum);
+}
+sum(1,2,normalFunction);
+```
+
+setTimeout(callback, 1000);
+
+就是典型的回调函数运用于异步的例子
+
+## 知识点5：Closure闭包
+
+当在一个作用域取值时，发现这个值不在当前作用域，就会去它上级作用域取值
+
+```
+const number = 1;
+function foo(){
+	console.log(number)
+}
+
+```
+
+函数作用域能访问到他的上级作用域里的number，就是一个典型例子
+
+当你在一个函数里使用一个不在当前函数里声明的变量就是闭包。
+
+每一个function在创建完，都会有一个closure
+
+### 常见应用1： a function was passed to another function as param
+
+```
+const number = 1;
+function foo(){
+	console.log(number)
+}
+function bar(fn){
+	const number = 2;
+	fn();
+}
+bar(foo); // 1
+```
+
+当形成 closure时，会形成lexical scope: 词法作用域，closure的取值是在当方程声明完 但还没执行前的静态场景下
+
+所以执行fn（）时，会执行foo（），而foo（）是写在全局作用域下的，所以当number找不到值时，会去函数声明的地方 即全局作用域里取，而不会去我们实际调用的地方，去bar里面取值
+
+```
+let number = 1;
+function foo(){
+console.log(number)
+}
+function bar(fn){
+const number = 2;
+fn();
+}number = 100;
+bar(foo); // 100 当number在foo()里取不到值时，就会去它上级作用域取值。foo()的上级作用域就是全局
+```
+
+### 常见应用2：a function was returned by another function
+
+```
+function foo(){
+	const number = 1;
+	return ()=>{
+	console.log(number)
+	}
+}
+const number = 100;
+foo()(); //1
+```
+
+取值的时候，看到number没有值，就会去()=>{}的上级作用域取值，取到值为1
+
+### 常见应用3： Immediately invoked function
+
+```
+(function(){}) (); // function() {} 用圆括号抱起来，不然IDE不知道什么意思
+```
+
+应用到了应用2所形成的闭包，内部变量不会对外部进行干扰

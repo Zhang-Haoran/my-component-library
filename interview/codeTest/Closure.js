@@ -30,7 +30,7 @@ function createCounter() {
   console.log(counter.getCount());
 
 //   立即执行函数
-// function() {}() 用圆括号抱起来，不然IDE不知道什么意思
+// function() {} 用圆括号抱起来，不然IDE不知道什么意思
 (function(){
 
-}())
+})()
