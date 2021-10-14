@@ -247,7 +247,7 @@ foo(); // window
 
 即window.foo();
 
-## this in normal function with call, apply, bind
+### this in normal function with call, apply, bind
 
 call和apply类似，想要调用函数并且指定this指向
 
@@ -270,7 +270,7 @@ apply从第二个参数开始，所有foo function的参数，以array形式放�
 
 bind会返回新function，把新的function的this指向 我传入的对象
 
-## this in an object and callback function
+### this in an object and callback function
 
 ```
 const calendar = {
@@ -327,7 +327,6 @@ const calendar = {
 };
 calendar.nextDay(); //7
 ```
-
 
 在arrow function里完全没有this指向，它在写下的这一刻，它的this指向完全依赖于 包裹它的上级作用域
 
