@@ -465,3 +465,15 @@ const greenFruit = fruits.find((i) => i.color === 'green');
 console.log(greenFruit);
 // {name: "pear", color: "green"}
 ```
+
+## 知识点8: Set
+
+set里的值是唯一的
+
+```
+const array = [1, 2, 2, 3, 4, 4];
+const uniqueArray = [...new Set(array)]
+console.log(uniqueArray); //[1, 2, 3, 4]
+```
+
+通过set可以帮array快速去重，用...把set转换回Array
