@@ -48,7 +48,7 @@ fruit被修改，照理来说fruit的结果应该仍为apple。会带来潜在�
 
 #### scope
 
-let is block scoped. A block is a chunk of code wrapped by currly brackets `{}` for example: 
+let is block scoped. A block is a chunk of code wrapped by currly brackets `{}` for example:
 
 `function() {// this is a block} 函数是块级作用域`
 
@@ -350,4 +350,118 @@ const calendar = {
 };
 calendar.normal();
 calendar.arrow();
+```
+
+## 知识点7： Array operator
+
+### Manipulation
+
+对尾部修改: push, pop
+
+对头部修改：shift, unshift
+
+对中间修改：splice。
+
+注：splice(x, y, newAdded)
+
+```
+const fruit = ['grape', 'apple', 'pear'];
+fruit.splice(1, 1, 'watermelon', 'peach');
+console.log(fruit); //  ['grape', 'watermelon','peach', 'pear']
+```
+
+在x index开始，删除y个元素，然后添加newAdded元素
+
+### Iteration
+
+#### for...of, for...in
+
+for...of 取每一项的值
+
+for..in 取每一项的index或者key （常用于object）
+
+#### forEach
+
+callback会接受array里面的每一项，对其进行操作
+
+```
+const fruits = ['apple','pear']
+fruit.forEach((fruit,index) => console.log(fruit))
+// apple
+// pear
+```
+
+#### Map
+
+生成一个和遍历数组等长度，处理过后的新数组
+
+```
+const fruits = ['apple', 'pear']
+const newFruits = fruits.map((fruit) => ({
+	name: fruit,
+	price: 10
+}))
+```
+
+#### Reduce
+
+根据array里每一项，以某种算法合并在一起
+
+```
+const numbers = [1, 2, 3]
+const sum = numbers.reduce((accumulator, number) => accumulator + number, 0) 
+// number 是numbers array里的项， accumulator是上一次callback被调用时，它返回的内容, 0为第一次执行callback时accumulator的值
+console.log(sum) // 6
+```
+
+第一次执行reduce时，accumulator初始值为0,number为1， 最终返回 0+1 =1
+
+第二次执行reduce时，accumulator变为1因为上一次返回结果为1,number 为2，最终返回 1+ 2 =3
+
+#### Fliter
+
+根据筛选条件，对array每一项进行筛选，通过筛选的放入一个新array
+
+```
+const fruits = [
+  {
+    name: 'apple',
+    color: 'red',
+  },
+  {
+    name: 'pear',
+    color: 'green',
+  },
+  {
+    name: 'grape',
+    color: 'green',
+  },
+];
+const filteredFruits = fruits.filter((i) => i.color === 'green');
+console.log(filteredFruits);
+// [{name: "pear", color: "green"}, {name: "grape", color: "green"}]
+```
+
+#### Find
+
+根据筛选条件，对array每一项进行筛选，一旦找到满足条件的立即返回该项，不再继续搜索
+
+```
+const fruits = [
+  {
+    name: 'apple',
+    color: 'red',
+  },
+  {
+    name: 'pear',
+    color: 'green',
+  },
+  {
+    name: 'grape',
+    color: 'green',
+  },
+];
+const greenFruit = fruits.find((i) => i.color === 'green');
+console.log(greenFruit);
+// {name: "pear", color: "green"}
 ```
