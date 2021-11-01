@@ -484,9 +484,7 @@ console.log(uniqueArray); //[1, 2, 3, 4]
 
 ### 基础构造块：NgModule
 
-一个为组件提供编译上下文的容器，用于存放代码块。
-
-这些代码块包括组件，服务提供者，作用域由NgModule定义。
+一个为组件提供编译上下文的容器，可以关联组件与服务，作用域由NgModule定义。
 
 可以导入其他模块的功能，和导出功能为其他模块使用。
 
@@ -595,23 +593,211 @@ const routes: Routes = [
 
 ## 知识点1：模块
 
+为组件提供编译上下文。将组件与服务关联成功能单元。
+
+Angular应用包含根模块(AppModule)作为启动引导。
+
+可以导入和导出功能。
+
+### NgModule元数据
+
+NgModule是一个带有 `@NgModule(）`装饰器的类。
+
+`@NgModule(）`是一个函数，它接受一个元数据对象{}。
+
+```
+@NgModule({
+declarations: [
+AppComponent,
+HeroesComponent,
+HeroDetailComponent,
+MessagesComponent,
+DashboardComponent
+],
+imports: [
+BrowserModule,
+AppRoutingModule,
+FormsModule,
+HttpClientModule,
+],
+providers: [],
+bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+```
+
+#### declarations
+
+属于本NgModule的组件，指令，管道。
+
+#### exports
+
+导出本模块使其可用于其他模块
+
+```
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+```
+
+#### imports
+
+用于本模块组件里的外部导入模块
+
+#### providers
+
+本模块向全局贡献的服务
+
+#### bootstrap
+
+主视图，根模块特有
+
+### NgModule与组件
+
+NgModule为组件提供编译上下文。
+
+组件与其模板共同定义视图。
+
 ## 知识点2：组件
+
+组件控制小部分视图区域。
+
+在类中定义组件显示逻辑，为视图提供支持。
+
+组件通过由属性和方法组成的API与视图交互。
+
+### 组件元数据
+
+元数据告诉了Angular去哪里找它所需要的代码块。它把模板与组件相关联。
+
+```
+@Component({
+selector: 'app-messages',
+templateUrl: './messages.component.html',
+styleUrls: ['./messages.component.scss'],
+providers: [HeroService]
+})
+
+```
+
+#### selector
+
+css选择器,告诉Angular，HTML出现选择器对应标签时，插入该组件实例
+
+`<app-hero-detail [hero]="selectedHero"></app-hero-detail>`
+
+#### templateUrl
+
+该组件HTML模板的地址，定义宿主视图
+
+#### providers
+
+组件所需服务
 
 ## 知识点3：模板
 
+HTML来告诉Angular如何渲染。
+
+使用数据绑定来协调DOM中数据。
+
+使用管道在显示出来前进行转换。
+
+使用指令来把程序逻辑应用到显示内容上。
+
 ## 知识点4：元数据
+
+模块，组件，服务都是使用装饰器的类，装饰器会标记它们的类型并提供元数据。
+
+元数据告诉了Angular去哪里找它所需要的代码块。它把模板与组件相关联。
+
+```
+@Component({
+selector: 'app-messages',
+templateUrl: './messages.component.html',
+styleUrls: ['./messages.component.scss'],
+providers: [HeroService]
+})
+```
+
 
 ## 知识点5：数据绑定
 
-## 知识点6：指令
+```
+<li>{{hero.name}}</li>
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+<li (click)="selectHero(hero)"></li>
+```
 
-## 知识点7：服务
+### 插值
 
-## 知识点8：依赖注入
+`{{hero.name}}`
 
-## 知识点9：路由
+### 属性绑定
 
-## 知识点10： SSR
+`[hero]`属性绑定把父组件 `HeroListComponent` 的 `selectedHero` 的值传到子组件 `HeroDetailComponent` 的 `hero` 属性中。
+
+### 事件绑定
+
+当用户点击某个英雄的名字时，`(click)` 事件绑定会调用组件的 `selectHero` 方法
+
+### 双向数据绑定
+
+```
+<input type="text" id="hero-name" [(ngModel)]="hero.name">
+```
+
+把事件绑定和属性绑定结合。属性绑定让数据从组件流入输入框。用户的修改通过事件绑定流回组件，把属性值设为新值。
+
+## 知识点6： 管道
+
+在HTML模板中声明，显示值的转换逻辑。操作符为 |
+
+```
+<!-- Default format: output 'Jun 15, 2015'-->
+
+ <p>Today is {{today | date}}</p>
+
+<!-- fullDate format: output 'Monday, June 15, 2015'-->
+
+<p>The date is {{today | date:'fullDate'}}</p>
+```
+
+## 知识点7：指令
+
+渲染HTML模板时，根据指令对DOM进行转换。常常作为属性出现在元素标签上
+
+### 结构型指令
+
+增加，删除，替换DOM元素修改布局。
+
+```
+<li *ngFor="let hero of heroes"></li>
+<app-hero-detail *ngIf="selectedHero"></app-hero-detail>
+```
+
+*ngFor是迭代器，遍历数组heroes为每个hero渲染一个li
+
+*ngIf是条件渲染，当selectedHero存在时，渲染HeroDetail组件
+
+### 属性型指令
+
+修改现有属性的显示值，行为，外观。
+
+```
+<input type="text" id="hero-name" [(ngModel)]="hero.name">
+```
+
+ngModel设置了，属性值的显示，和对change事件的响应。
+
+## 知识点8：服务
+
+## 知识点9：依赖注入
+
+## 知识点10：路由
+
+## 知识点11： SSR
 
 # 面试经验总结
 
