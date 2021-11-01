@@ -478,6 +478,26 @@ console.log(uniqueArray); //[1, 2, 3, 4]
 
 通过set可以帮array快速去重，用...把set转换回Array
 
+# Angular 常用知识点总结
+
+## 模块
+
+## 组件
+
+## 模板
+
+## 元数据
+
+## 数据绑定
+
+## 指令
+
+## 服务
+
+## 依赖注入
+
+## 路由
+
 # 面试经验总结
 
 ## Yep Innovation Pty Ltd
