@@ -480,23 +480,138 @@ console.log(uniqueArray); //[1, 2, 3, 4]
 
 # Angular 常用知识点总结
 
-## 模块
+## 总览
 
-## 组件
+### 基础构造块：NgModule
 
-## 模板
+一个为组件提供编译上下文的容器，用于存放代码块。
 
-## 元数据
+这些代码块包括组件，服务提供者，作用域由NgModule定义。
 
-## 数据绑定
+可以导入其他模块的功能，和导出功能为其他模块使用。
 
-## 指令
+Angular应用就是由一组NgModule定义出的。应用至少会有一个用于引导应用的根模块（AppModule，位于app.module.ts），和其他特性模块。
 
-## 服务
+```
+@NgModule({
+  declarations: [
+    AppComponent,
+    HeroesComponent,
+    HeroDetailComponent,
+    MessagesComponent,
+    DashboardComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
 
-## 依赖注入
+### 组件定义视图，组件使用服务
 
-## 路由
+组件定义视图的的显示逻辑，组件使用服务提供的与视图不相关的功能如数据源。服务提供者作为依赖，注入到组件中
+
+```
+@Component({
+  selector: 'app-messages',
+  templateUrl: './messages.component.html',
+  styleUrls: ['./messages.component.scss']
+})
+export class MessagesComponent implements OnInit {
+
+  constructor(public messageService: MessageService) { }
+
+  ngOnInit(): void {
+  }
+
+}
+```
+
+### 装饰器
+
+模块，组件，服务都是使用装饰器的类，装饰器会标记它们的类型并提供元数据。
+
+模块
+
+```
+@NgModule()
+```
+
+组件
+
+```
+@Component(）
+```
+
+服务
+
+```
+@Injectable（）
+```
+
+### 元数据
+
+将组件类和定义视图的模板相关联。
+
+```
+@Component({
+selector: 'app-messages',
+templateUrl: './messages.component.html',
+styleUrls: ['./messages.component.scss']
+})
+```
+
+### 模板
+
+把HTML与Angular指令相组合，在渲染HTML之前，修改HTML。
+
+```
+<div *ngIf="messageService.messages.length">
+  <h2>Message</h2>
+  <button class="clear" (click)="messageService.clear()">Clear message</button>
+  <div *ngFor="let message of messageService.messages">{{message}}</div>
+</div>
+
+```
+
+### 路由
+
+定义视图间导航路径。
+
+```
+const routes: Routes = [
+  {path: 'heroes', component: HeroesComponent},
+  {path: 'dashboard', component: DashboardComponent},
+  {path: 'detail/:id', component: HeroDetailComponent},
+  {path: '', redirectTo:'/dashboard', pathMatch:'full'}
+];
+```
+
+## 知识点1：模块
+
+## 知识点2：组件
+
+## 知识点3：模板
+
+## 知识点4：元数据
+
+## 知识点5：数据绑定
+
+## 知识点6：指令
+
+## 知识点7：服务
+
+## 知识点8：依赖注入
+
+## 知识点9：路由
+
+## 知识点10： SSR
 
 # 面试经验总结
 
