@@ -793,9 +793,85 @@ ngModel设置了，属性值的显示，和对change事件的响应。
 
 ## 知识点8：服务
 
+组件把例如从服务器获取数据的工作委托给服务，让组件只关注用户体验。
+
+通过把处理任务定义到服务类中，它可以被各种组件使用。
+
+服务也可依赖于其他服务，例如这里的MessageService
+
+```
+
+
+@Injectable({
+  providedIn: 'root',
+})
+export class HeroService {
+  private heroesUrl = 'api/heroes';
+  httpOptions = {headers: new HttpHeaders({'Content-Type': 'application/json'})}
+  constructor(
+    private messageService: MessageService,
+    private http: HttpClient
+  ) {}
+
+  private log(message: string) {
+    this.messageService.add(`HeroService: ${message}`);
+  }
+
+  getHeroes(): Observable<Hero[]> {
+    return this.http
+      .get<Hero[]>(this.heroesUrl)
+      .pipe(catchError(this.handleError<Hero[]>('getHeroes', [])));
+  }
+
+  getHero(id: number): Observable<Hero | undefined> {
+    const hero = HEROES.find((h) => h.id === id);
+    this.messageService.add(`HeroService: fetched hero id= ${id}`);
+    return of(hero);
+  }
+
+  private handleError<T>(operation = 'operation', result?: T) {
+    return (error: any): Observable<T> => {
+      console.log(error);
+      this.log(`${operation} failed: ${error.message}`);
+      return of(result as T);
+    };
+  }
+  updateHero(hero: Hero): Observable<any | undefined> {
+    return this.http.put(this.heroesUrl, hero, this.httpOptions)
+    .pipe(tap(_=> this.log(`updated hero id=${hero.id}`)),
+    catchError(this.handleError<any>('updateHero'))
+    )
+  }
+```
+
 ## 知识点9：依赖注入
 
+依赖注入把应用逻辑分解为各种服务，让这些服务用于各个组件。
+
+把服务注入到组件里，让组件类可以访问服务类。
+
+```
+@Injectable({
+providedIn: 'root',
+})
+
+```
+
+`修饰器@Injectable()`说明该服务可以作为依赖注入
+
+服务可以在元数据中把自己注册为提供者，让自己随处可用。
+
+当在根提供服务时，Angular会为HeroService创建一个共享实例，让他随处可用。
+
+```
+constructor(heroService: HeroService)
+
+```
+
+将依赖项注入组件的构造器中
+
 ## 知识点10：路由
+
 
 ## 知识点11： SSR
 
