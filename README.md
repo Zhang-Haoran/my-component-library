@@ -872,8 +872,101 @@ constructor(heroService: HeroService)
 
 ## 知识点10：路由
 
+当浏览器URL变化时，路由器会查找对应的Route。
 
-## 知识点11： SSR
+通过RouterModule.forRoot()方法配置路由器，把结果添加入imports
+
+```
+const routes: Routes = [
+  {path: 'heroes', component: HeroesComponent，data: { title: 'Heroes List' }},
+  {path: 'dashboard', component: DashboardComponent},
+  {path: 'detail/:id', component: HeroDetailComponent},
+  {path: '', redirectTo:'/dashboard', pathMatch:'full'}
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
+```
+
+每个Route都会把URLpath映射到一个组件。
+
+空路径表示默认路径
+
+data属性存放与路由相关的数据。例如
+
+```
+data: { title: 'Heroes List' }
+```
+
+
+
+## 知识点11： SSR（Angular Universal）
+
+标准的Angular运行在浏览器，DOM渲染页面。Angular Universal会在服务端运行，生成静态应用界面，再通过客户端启动。
+
+### 好处
+
+1. 帮助SEO
+2. 提高手机端性能
+3. 快速显示第一页
+
+### 流程
+
+服务器会把客户端对页面的请求传给NgUniversal的ngExpressEngine，调用renderModule()函数。
+
+renderModule()函数，接受HTML模板，组件模块和决定组件显示的路由作为输入
+
+该路由从客户端请求传给服务器，服务器把渲染好的页面作为Promise返回。
+
+### Universal的模板引擎
+
+```
+server.engine('html', ngExpressEngine({
+  bootstrap: AppServerModule,
+}));
+```
+
+ngExpressEngine是对renderModule()的封装，它把客户端请求转化成服务器渲染的HTML界面。
+
+### 过滤请求的URL
+
+服务器将对页面的请求和其他请求分开。
+
+应用路由的请求不带扩展名
+
+```
+// All regular routes use the Universal engine
+server.get('*', (req, res) => {
+  res.render(indexHtml, { req, providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }] });
+});
+```
+
+静态页面的请求会带有扩展名。
+
+```
+// Serve static files from /browser
+server.get('*.*', express.static(distFolder, {
+  maxAge: '1y'
+}));
+```
+
+数据请求会带有/api开头
+
+```
+// TODO: implement data requests securely
+server.get('/api/**', (req, res) => {
+  res.status(404).send('data requests are not yet supported');
+});
+```
+
+### 在服务端使用绝对 URL 进行 HTTP（数据）请求
+
+在服务端渲染的应用中，HTTP URL 必须是绝对的 （例如，`https://my-server.com/api/heroes` ）。
+
+在浏览器中运行时，它们是相对 URL。
 
 # 面试经验总结
 
