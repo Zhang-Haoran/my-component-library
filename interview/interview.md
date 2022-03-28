@@ -10,6 +10,18 @@ I am an efficient team player. I am currently working in a 10 people’s scrum t
 
 I can adapt to a multicultural environment. My colleague comes from a different cultural background. I respect all kinds of people with different backgrounds
 
+Hi David,
+
+I currently working as a full-time frontend developer in a tech company called yeptech. The company is currently working on a greenfield project called Yephome.com which helps customer find their desired properties just like Domain.com. I am in a 12 people's agile team working closely with UI designer, BA and devops. My responbility is mainly focusing on frontend development using Angular and Material design to implement the User interface which passed from UI designer through Figma. Besides that, I am also focusing on website SEO, currently it has been improved to the second page of google.
+
+Last year, I was working at Ai English as a full stack developer with React and Redux as frontend, node.js as backend including using JEST for unit testing and Github Action and AWS pipeline for CICD
+
+For my educational background, I finished my master and bachelor degree at Monash. Both major in IT.
+
+I can adapt to a multicultural environment. My colleagues come from a different cultural background. I respect all kinds of people with different backgrounds
+
+The most attractive part for me to apply this role is that DigIO is in the people business. It suits me perfectly. In the team, 　 my role usually is a giver. I like to share my knowledge with other team memeber to help them improve. Also, They help me a lot to improve my skill. Technoloy for me is just a tool that I need to continuouly improve for lifetime. But the people who are using it are the most valuable for me to encourage each other.
+
 ### **Why are you looking for a job?**
 
 I have been working at my current company for almost one year now and have got a great amount of experience in software development. At this point in my career, I have skills to go beyond the duties of my current role. I’m looking for an opportunity where I can put my skills to work for a mission that I am passionate about and take on more responsibility.
@@ -93,9 +105,9 @@ not do type conversion, so if two values are not the same type === will simply r
 ### **Difference between var and let**
 
 Global scope, function scope, block scope
-Hoisting: 提升变量名，声明被提升到当前scope最上方。
-解决var变量提升后没有block scope而产生的变量污染问题，用let，let是block scope
+Hoisting: 提升变量名，声明被提升到当前 scope 最上方。
+解决 var 变量提升后没有 block scope 而产生的变量污染问题，用 let，let 是 block scope
 
 ### **Closure**
 
-没有运行前的静态场景下，function在那里定义的，值在哪里取。如果在当前定义域取不到，就去当前定义域上级的值
+没有运行前的静态场景下，function 在那里定义的，值在哪里取。如果在当前定义域取不到，就去当前定义域上级的值
