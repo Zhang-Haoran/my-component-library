@@ -22,9 +22,11 @@ I can adapt to a multicultural environment. My colleague comes from a different 
 
 **The most attractive part for me to apply this role is that DigIO is in the people business. It suits me perfectly. In the team, my role usually is a giver. I like to share my knowledge with other team memeber to help them improve. Also, They help me a lot to improve my skill. Technoloy for me is just a tool that I need to continuouly improve for lifetime. But the people who are using it are the most valuable for me to encourage each other.**
 
+**I love technology in my leisure time. I am usually doing some side-projects with my friends or just by myself. In my personal website, there are plenty of projects that I have done during my leisure time.**
+
 ### **Why are you looking for a job?**
 
-I have been working at my current company for almost one year now and have got a great amount of experience in software development. At this point in my career, I have skills to go beyond the duties of my current role. I’m looking for an opportunity where I can put my skills to work for a mission that I am passionate about and take on more responsibility.
+I have got a great amount of experience in software development during serveal year's professional career. At this point in my career, I have skills to go beyond the duties of my current role. I’m looking for an opportunity where I can put my skills to work for a mission that I am passionate about and take on more responsibility.
 
 ### **What kind of job are you looking?**
 
@@ -32,7 +34,7 @@ Currently, I am looking for mid-level software developer position. Work mode can
 
 ### **What’s your plan?**
 
-For my career plan, I want to become mid level developer within 3 years. I have been enhanced my technical skills during the work and also in my leisure time. I usually have side project in GitHub to practice my skills which can make me approach my goal.
+For my career plan, I want to become senior level developer within 3 years. I have been enhanced my technical skills during the work and also in my leisure time. I usually have side project in GitHub to practice my skills which can make me approach my goal.
 
 ### **Have you heard about our company?**
 
