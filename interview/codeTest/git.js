@@ -6,7 +6,7 @@
  * git diff 对比git 记录
  * git status 看git现在状态
  * git add后 就会进入 stage
- * git restore + 文件路径 让修改的文件撤销修改 (在unstage的情况下)
+ * git restore 让修改的文件撤销修改 (在unstage的情况下)
  * git stash 把修改暂存到抽屉里,可以有好几个 stash
  * git apply stash 把修改拿出来
  * git reset + 文件路径 就会让staged文件回到untracked 状态, 就是vscode里的discard
