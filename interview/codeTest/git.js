@@ -14,7 +14,7 @@
  * 提交后：
  * git revert + unique id 用新的commit对之前记录进行回滚 (可以对revert的commit进行 revert)，加上unique id
  * git reset + unique id 从历史记录中删除 commit，往后的记录的commit也全部删除 （最好别用简单粗暴的删除，不能让git记录 有迹可循）
- * soft: 修改保留进stage,
- * hard:完全删除
+ * --soft: 修改保留进stage,
+ * --hard:完全删除
  *
  */
