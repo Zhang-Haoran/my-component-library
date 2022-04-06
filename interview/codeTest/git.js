@@ -20,5 +20,5 @@
  * git branch -d 删除branch
  * git branch 列出所有branch
  * git log --all --decorate --oneline --graph 查看图形界面
- * fasdfasfs
+ * git merge + branch name 合并分支代码。先checkout到需要拉入代码的branch，再选择别的开发好的branch。成功后，之后在push一下，更新一下当前branch
  */
