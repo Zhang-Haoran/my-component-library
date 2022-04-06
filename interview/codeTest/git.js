@@ -16,7 +16,7 @@
  * git reset + unique id 从历史记录中删除 commit，往后的记录的commit也全部删除 （最好别用简单粗暴的删除，不能让git记录 有迹可循）
  * --soft: 修改保留进stage,
  * --hard:完全删除
- * git checkout -b + 名字 新建branch
+ * git checkout -b + 名字 在本地新建branch,云端上还不存在
  * git branch -d 删除branch
  * git branch 列出所有branch
  * git log --all --decorate --oneline --graph 查看图形界面
