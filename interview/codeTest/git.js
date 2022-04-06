@@ -2,6 +2,7 @@
  * 每个commit都有一个unique id
  * 可以打开vscode里的terminal，看每次git操作的命令
  * 提交前：
+ * git remote add + name + url添加远程仓库
  * git log 看git commit 记录
  * git diff 对比git 记录
  * git status 看git现在状态
@@ -21,7 +22,11 @@
  * git branch 列出所有branch
  * git log --all --decorate --oneline --graph 查看图形界面
  * git merge + branch name 合并分支代码。先checkout到需要拉入代码的branch，再选择别的开发好的branch。成功后，之后在push一下，更新一下当前branch
- * git remote add + name + url添加远程仓库
+ *
+ *
  * origin/main 带origin代表remote server
  * main 代表本地branch
+ *
+ * git rebase: linear history
+ * git merge:
  */
