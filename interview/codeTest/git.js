@@ -27,6 +27,7 @@
  * origin/main 带origin代表remote server
  * main 代表本地branch
  *
- * git rebase: linear history
- * git merge:
+ * git rebase: linear history. 先checkout到需要拉入代码的branch，再选择别的开发好的branch. rebase 后只会有一条线
+ * git rebase -i: interactive rebase 对commit history进行合并操作，多个commit可能合并为一个
+ * git merge: 两条线
  */
