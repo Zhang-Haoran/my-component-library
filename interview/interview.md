@@ -2,17 +2,7 @@
 
 ### **what is your current situation?**
 
-My name is Haoran Zhang.`<br>`
-
-I am a passionate software developer. I finished my IT bachelor and master’s degree in software development at Monash. Currently, I am working as a software developer in an e-learning company called A I English. My duty is mainly focusing on developing an enterprise resource planning system with JavaScript. My tech stack includes React as frontend and Node.js as backend. I can write uniting testing to ensure code quality and use AWS to deploy services. I usually use GitHub Pipeline to automate the CICD process. Totally, I have 2-year coding experience in software development.
-
-I am an efficient team player. I am currently working in a 10 people’s scrum team with UI designer, Business analyst and Devops. I am one of 4 major full-stack developers. We have 2 weeks per scrum. Every scrum we have daily stand ups, retrospectives and refinements. I like to get involved in the discussion and contribute my ideas to the project team.
-
-I can adapt to a multicultural environment. My colleague comes from a different cultural background. I respect all kinds of people with different backgrounds
-
-**Hi David,**
-
-**I currently working as a full-time frontend developer in a tech company called yeptech. The company is currently working on a greenfield project called Yephome.com which helps customer find their desired properties just like Domain.com. I am in a 12 people's agile team working closely with UI designer, BA and devops. My responbility is mainly focusing on frontend development using Angular and Material design to implement the User interface which passed from UI designer through Figma. Besides that, I am also focusing on website SEO, currently it has been improved to the second page of google.**
+**I currently working as a full-time frontend developer in a tech company called yeptech. The company is currently working on a greenfield project called Yephome.com which helps customer find their desired properties. I am in a 12 people's agile team working closely with UI designer, BA and devops. My responbility is mainly focusing on frontend development using Angular and Material design to implement the User interface which passed from UI designer through Figma. Besides that, I am also focusing on website SEO, currently it has been improved to the second page of google.**
 
 **Last year, I was working at Ai English as a full stack developer with React and Redux as frontend, node.js as backend including using JEST for unit testing and Github Action and AWS pipeline for CICD**
 
@@ -20,17 +10,17 @@ I can adapt to a multicultural environment. My colleague comes from a different 
 
 **I can adapt to a multicultural environment. My colleagues come from a different cultural background. I respect all kinds of people with different backgrounds**
 
-**The most attractive part for me to apply this role is that DigIO is in the people business. It suits me perfectly. In the team, my role usually is a giver. I like to share my knowledge with other team memeber to help them improve. Also, They help me a lot to improve my skill. Technoloy for me is just a tool that I need to continuouly improve for lifetime. But the people who are using it are the most valuable for me to encourage each other.**
-
 **I love technology in my leisure time. I am usually doing some side-projects with my friends or just by myself. In my personal website, there are plenty of projects that I have done during my leisure time.**
+
+**The most attractive part for me to apply this role is that Cyara is a automated customer experience assurance platform. Many companies like nab, tesla trust cyara to test their customer experience which indicated cyara is the expert of this field. I found the job ad in the Linkedin and it matched with my skills. Meanwhile, Improving current website customer experience is my daily work. I would like to contribute my skill and dig it deeper in improving customer experience**
 
 ### **Why are you looking for a job?**
 
-I have got a great amount of experience in software development during serveal year's professional career. At this point in my career, I have skills to go beyond the duties of my current role. I’m looking for an opportunity where I can put my skills to work for a mission that I am passionate about and take on more responsibility.
+I have got a great amount of experience in software development during serveal year's professional career. At this point in my career, I have skills to go beyond the duties of my current role. I’m looking for an opportunity where I can put my skills to work for a mission that I am passionate about and take on more responsibility. Current company doesn't have such role provided. Working as a junior developer is my starting point. Hopefully, I could become a higher developer in next few year in cyara and take more responsibility.
 
 ### **What kind of job are you looking?**
 
-Currently, I am looking for mid-level software developer position. Work mode can be onsite or remote. The tech stack use React as frontend and use node.js as backend would be better. If tech stack doesn’t match, it’s ok. I am a quicker learner based on my coding experience.
+Currently, I am looking for frontend developer position. Work mode can be onsite or remote. The tech stack use React as frontend and use node.js as backend would be better. If tech stack doesn’t match, it’s ok. I am a quicker learner based on my coding experience.
 
 ### **What’s your plan?**
 
@@ -61,10 +51,6 @@ From technical aspect, I successfully developed a highly reliable ERP system cal
 
 First, I would introduce my current role in AI English as software developer. I currently working in a 10 people’s scrum team with UI designer, Business analyst and Devops. I am one of 4 major full-stack developer. We have 2 weeks per scrum. Every scrum we have daily stand up, retrospective and refinement. I like to get involved in the discussion and contribute my idea to the project team. My duty is mainly focusing on developing an enterprise resource planning system with JavaScript. I use React as frontend and Node.js as backend. I write uniting testing and use AWS to deploy services. I usually use GitHub Pipeline to automate the CICD process. From the system architectures, we use microservices and RESTful APIs.
 We developed the highly reliable ERP system called AI system to automate daily business for operations staff and their precious time. The value that the product bring to company is remarkable. Before they use our system, they only can manually schedule class only one day early. But now the system will automate class scheduling for them. Also, the class network monitor will provide the operations staff a emergency alert if the class network is unstable and let them take action in time. The system improves the class quality that our company delivered and make our client satisfied.
-
-### **Tell me about your qualifications**
-
-Skill match JD
 
 ### **What questions do you have for me?**
 
