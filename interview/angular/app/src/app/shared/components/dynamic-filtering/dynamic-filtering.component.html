@@ -1,0 +1,9 @@
+<form [formGroup]="reactiveForm">
+  <input type="text" formControlName="location">
+  <ul>
+    <li *ngFor="let eachData of filteredData">
+      {{eachData}}
+    </li>
+  </ul>
+</form>
+<button (click)="handleSubmit()">Submit</button>
